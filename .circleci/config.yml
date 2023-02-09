@@ -47,6 +47,6 @@ workflows:
   say-hello-workflow:
     jobs:
       - test:
-          requires: build
+          requires: [build]
       - analyze:
-          requires: test
+          requires: [test]
